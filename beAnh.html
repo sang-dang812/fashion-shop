@@ -1,0 +1,270 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website Bán Quần Áo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            overflow: hidden;
+        }
+
+            header h1 {
+                float: left;
+                margin-left: 20px;
+            }
+
+        nav {
+            margin-right: 20px;
+            width: 1000px;
+        }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+                nav ul li {
+                    display: inline-block;
+                    margin-left: 20px;
+                }
+
+                    nav ul li a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+
+                        nav ul li a:hover {
+                            text-decoration: underline;
+                        }
+
+        .hero {
+            text-align: center;
+            position: relative;
+            margin-bottom: 700px;
+        }
+
+            .hero h2 {
+                font-size: 3em;
+                margin-bottom: 20px;
+            }
+
+            .hero p {
+                font-size: 1.5em;
+                margin-bottom: 30px;
+            }
+
+        .btn {
+            display: inline-block;
+            background-color: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+            .btn:hover {
+                background-color: #e67e22;
+            }
+
+        .featured-products {
+            padding: 50px 0;
+            background-color: #fff;
+            text-align: center;
+            
+        }
+
+        .product {
+            display: inline-block;
+            margin: 20px;
+            text-align: left;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+            .product img {
+                width: 270px;
+                height: 380px;
+                border-radius: 5px;
+            }
+
+            .product h3 {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+
+            .product p {
+                font-size: 1.1em;
+            }
+
+        .search-products {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+            .search-products input[type="text"] {
+                padding: 10px;
+                width: 300px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .search-products button {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+                .search-products button:hover {
+                    background-color: #45a049;
+                }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        header h1 {
+            margin-left: 20px;
+            flex: 1;
+        }
+
+        .logo {
+            float: left;
+            margin-right: 20px;
+            width: 200px;
+            height: 150px;
+        }
+        
+        .video-bg {
+            position: absolute;
+            left: 0;
+            width: 1428px; 
+            height: 788px;
+            
+            z-index: -1; /* Đặt video phía sau các phần tử khác */
+        }
+        .video-content {
+            position: absolute;
+            top: 400px;
+            right: 100px;
+            z-index: 1;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><img src="https://www.yourdesigner.vn/wp-content/uploads/2017/09/08-thiet-ke-logo-thuong-hieu-quan-ao.jpg" alt="Logo" class="logo"></h1>
+            <nav>
+                <table>
+                    <td>
+                    <th style="align:left">
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </th>
+                    <th style="align:right">
+                        <section class="search-products">
+                            <div class="container">
+                                <form action="#" method="GET">
+                                    <input type="text" name="keyword" placeholder="Tìm kiếm sản phẩm...">
+                                    <button type="submit">Tìm kiếm</button>
+                                </form>
+                            </div>
+                        </section>
+                    </th>
+                    </td>
+                </table>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="video-box">
+            <video autoplay loop muted class="video-bg">
+                <source src="https://mediav.ysl.com/media/v1/pmp4/static/clear/6159029847001/628de420-e97a-400e-bedf-3c65c652cbae/ca5aaf32-63c4-4dc7-b849-b5b8e17243b0/main.mp4?akamai_token=exp=1736554925~acl=/media/v1/pmp4/static/clear/6159029847001/628de420-e97a-400e-bedf-3c65c652cbae/ca5aaf32-63c4-4dc7-b849-b5b8e17243b0/main.mp4*~hmac=76033ed6745bfe8879d7f5cc744a8f92561f5ba0d949fdeb9afd2ddcdf5bf448" type="video/mp4">
+                <!-- Nếu cần thêm các định dạng khác, thêm vào đây -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-content">
+                <h2>Chào mừng đến với cửa hàng quần áo của chúng tôi</h2>
+                <p>Chọn ngay những mẫu quần áo yêu thích của bạn và trải nghiệm dịch vụ tuyệt vời từ chúng tôi!</p>
+                <a href="#" class="btn">Xem thêm</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured-products">
+        <div class="container">
+            <h2>Các sản phẩm nổi bật</h2>
+            <div class="product">
+                <img src="https://cdn2.yame.vn/pimg/ao-khoac-classic-cool-touch-02-0022609/7e113f82-3325-a500-b1e2-001ad360f399.jpg?w=540&h=756&c=true&ntf=false" alt="Sản phẩm 1">
+                <h3>Áo Khoác Có Nón Vải Thun Mặc Mát Trơn Dáng Vừa Đơn Giản</h3>
+                <p>800.000 VND</p>
+            </div>
+            <div class="product">
+                <img src="https://cdn2.yame.vn/pimg/ao-so-mi-tay-dai-soi-ca-phe-wrinkle-free-13-0022478/5dd41ed7-c24b-9500-193e-001ad35b1a68.jpg?w=540&h=756" alt="Sản phẩm 2">
+                <h3>Áo Sơ Mi Cổ Bẻ Tay Dài Sợi Cà Phê Ít Nhăn Trơn Dáng Vừa Đơn Giản</h3>
+                <p>750.000 VND</p>
+            </div>
+            <br>
+            <div class="product">
+                <img src="https://cdn2.yame.vn/pimg/quan-ong-rong-on-gian-y-nguyen-ban-ver17-0021027/378747af-bfaa-f000-aea1-00197339eaf8.jpg?w=540&h=756" alt="Sản phẩm 3">
+                <h3>Quần Dài Lưng Thun Ống Ôm Vải Thun Co Giãn Trung Bình Trơn Dáng Rộng Đơn Giản</h3>
+                <p>500.000 VND</p>
+            </div>
+            <div class="product">
+                <img src="https://cdn2.yame.vn/pimg/quan-tay-lung-gai-ong-ung-soi-nhan-tao-mac-thoai-mai-bieu-tuong-dang-vua-on-gian-seventy-seven-27-0023280/911aea18-a0b8-aa00-18b8-001b4ed7de70.jpg?w=540&h=756" alt="Sản phẩm 4">
+                <h3>Quần Tây Lưng Gài Ống Đứng Sợi Nhân Tạo Mặc Thoải Mái Biểu Tượng Dáng Vừa Giá Tốt </h3>
+                <p>1.000.000 VND</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var video = document.querySelector('.video-bg');
+        video.play();
+    });
+</script>
+</html>
